@@ -1,0 +1,33 @@
+﻿<Window x:Class="SnakeClone.NewHighscoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SnakeClone"
+        mc:Ignorable="d"
+        Title="NewHighscoreWindow" 
+        Height="250" Width="350"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" 
+                    HorizontalAlignment="Center">
+            <TextBlock Text="Congratulation"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"/>
+            <TextBlock Text="You reached a new Highscore"
+                       HorizontalAlignment="Center"/>
+            <TextBlock Text="Please enter your name"
+                       HorizontalAlignment="Center"
+                       Margin="0 30 0 5"/>
+            <TextBox x:Name="textBoxName" 
+                     TextAlignment="Center"/>
+            <Button Content="OK"
+                    Width="80"
+                    Margin="0 20 0 0"
+                    Click="OkClick"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
